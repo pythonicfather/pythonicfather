@@ -16,7 +16,7 @@ def caesar_cipher(plaintext, key):
     return "".join(list(map(lambda c : alphabet[(alphabet.index(c) + key) % len(alphabet)], plaintext)))
 
 # Caesar's Decipher
-# We retriese the offset added earlier
+# We retriese the offset added earlier.
 
 def caesar_decipher(ciphertext, key):
     return "".join(list(map(lambda c : alphabet[(alphabet.index(c) - key) % len(alphabet)], ciphertext)))
