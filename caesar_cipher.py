@@ -21,8 +21,8 @@ def caesar_cipher(plaintext, key):
 def caesar_decipher(ciphertext, key):
     return "".join(list(map(lambda c : alphabet[(alphabet.index(c) - key) % len(alphabet)], ciphertext)))
 
-
-print("Ciphertext of 'ABC' : " + "'" + caesar_cipher("ABC", 3) + "'")
-print("Plaintext of 'DEF' : " + "'" + caesar_decipher("DEF", 3) + "'")
-print("Ciphertext of 'SECRET' : " + "'" + caesar_cipher("SECRET", 3) + "'")
-print("Plaintext of 'VHFUHW' : " + "'" + caesar_decipher("VHFUHW", 3) + "'")
+def examples():
+    print("Ciphertext of 'ABC' : " + "'" + caesar_cipher("ABC", 3) + "'")
+    print("Plaintext of 'DEF' : " + "'" + caesar_decipher("DEF", 3) + "'")
+    print("Ciphertext of 'SECRET' : " + "'" + caesar_cipher("SECRET", 3) + "'")
+    print("Plaintext of 'VHFUHW' : " + "'" + caesar_decipher("VHFUHW", 3) + "'")
