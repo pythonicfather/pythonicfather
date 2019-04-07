@@ -49,11 +49,13 @@ def rsa_decipher_blocks(cipher_message_blocks, private_key):
     return [rsa_decipher(cipher_message_block, private_key) for cipher_message_block in cipher_message_blocks]
 
 def example1():
+    # Example 1 : Cipher and Decipher
     rsa(47,71)
     print(rsa_cipher(688, (79, 3337)))
     print(rsa_decipher(1570, (1019, 3337)))
 
 def example2():
+    # Example 2 : Cipher blocks
     # Public and private keys
     n = 3337
     e = 79
@@ -82,6 +84,7 @@ def example2():
     print(f'The decrypted message is : {deciphered_message}')
 
 def example3():
+    # Example 3 - Exercise
     c = 564648324243696562331689
     public_key = (11, 703)
     private_key = (59, 703)
