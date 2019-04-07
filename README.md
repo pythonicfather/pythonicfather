@@ -1,3 +1,3 @@
 # Pythonic Father
 
-Daily pythonic scripts.
+Some pythonic scripts.
