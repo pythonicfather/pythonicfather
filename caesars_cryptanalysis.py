@@ -16,5 +16,13 @@ def break_cipher(ciphertext, keys):
         print(f'Key = {key}\tPlaintext = {plaintext}\tFitness = {fitness_score}')
     print(f'\nMost accurate key = {most_accurate_key}\tMost accurate plantext = {most_accurate_plaintext}\tFitness = {max_fitness_score}\n')
 
-break_cipher('YMJHFJXFWHNUMJWNXTSJTKYMJJFWQNJXYPSTBSFSIXNRUQJXYHNUMJWX', range(1,26))
-break_cipher('VHFUHW', [3,5])
+def example1():
+    break_cipher('YMJHFJXFWHNUMJWNXTSJTKYMJJFWQNJXYPSTBSFSIXNRUQJXYHNUMJWX', range(1,26))
+    break_cipher('VHFUHW', [3,5])
+
+
+def example2():
+    ciphertext = "YMJRFLNHTKHTINSLNSYMJZSNAJWXNYD"
+    break_cipher(ciphertext, range(1,26))
+
+example1()
